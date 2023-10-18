@@ -1,8 +1,9 @@
 import { useSelector, useDispatch } from "react-redux";
 import css from './ContactsList.module.css';
 import { selectIsLoading, selectError, selectFilteredContacts } from "redux/selectors";
-import { useEffect } from "react";
-import { fetchContacts, deleteContact } from "redux/operations";
+// import { useEffect } from "react";
+import { deleteContact } from "redux/operations";
+// import { fetchContacts } from "redux/operations";
 
 export const ContactsList = () => {
     const isLoading = useSelector(selectIsLoading)
