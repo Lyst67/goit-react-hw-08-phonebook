@@ -5,7 +5,4 @@ export const initialState = {
     error: null,
   },
   filters: '',
-  customer: {
-    isLogedIn: false,
-  },
 };

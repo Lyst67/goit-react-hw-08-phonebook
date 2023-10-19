@@ -1,9 +1,9 @@
 import React, { useRef} from 'react';
 import css from './AddForm.module.css';
-import { addContact } from 'redux/operations';
+import { addContact } from 'redux/contacts/operations';
 import { nanoid } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
-import { selectContacts } from 'redux/selectors';
+import { selectContacts } from 'redux/contacts/selectors';
 import { useNavigate } from 'react-router-dom';
 
 
@@ -20,7 +20,7 @@ export const AddForm = () => {
        const phone = form.elements.number.value
        const id = nanoid()
        const newContact = { id, name, phone }
-       const existName = contacts.find(contact =>
+       const existName = contacts?.find(contact =>
          contact.name.toLowerCase() === name.toLowerCase().trim())
        if (existName) { alert(`${name} is already in contacts!`)
          return

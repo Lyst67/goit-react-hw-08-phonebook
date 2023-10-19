@@ -1,10 +1,24 @@
+import { useDispatch } from "react-redux"
 import css from "./RegisterForm.module.css"
+import { registerThunk } from "redux/auth/auth-operations"
+
 export const RegisterForm = () => {
+    const dispatch = useDispatch()
+
     const handleSubmit = (evt) => {
         evt.preventDefault()
+        const form = evt.currentTarget;
+        dispatch(registerThunk({
+            name: form.elements.name.value,
+            email: form.elements.email.value,
+            password: form.elements.password.value,
+        }))  
     }
+
     return (
-        <form className={css.form_thumb} onSubmit={handleSubmit}>
+        <>
+        <h1 className={css.title}>Please register!</h1>
+          <form className={css.form_thumb} onSubmit={handleSubmit} autoComplete="on">
             <label className={css.form_label}>
                 Name
                <input className={css.form_input} type="text" name="name"
@@ -22,5 +36,6 @@ export const RegisterForm = () => {
             </label>
             <button type="submit" className={css.form_btn}>Register</button>
         </form>
+    </>
     )
 }
