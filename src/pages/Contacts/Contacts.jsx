@@ -7,7 +7,9 @@ const Contacts = () => {
    
     return (
         <div className={css.contacts_container}>
-                <Link className={css.add_link} to="add">Add Contact</Link>
+            <button type="button" className={css.add_btn}>
+                <Link className={css.add_link} to="add">Add Contact</Link></button>
+              
             <Outlet/>
             <h2 className={css.contacts_title}>Your contacts</h2>
              <Filter />

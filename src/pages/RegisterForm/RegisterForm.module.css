@@ -29,6 +29,7 @@
   border-radius: 6px;
   background-color: #aee8ee;
   cursor: pointer;
+  box-shadow: -2px 16px 37px -12px #000000bf;
   transition: color 250ms linear, background-color 250ms linear;
 }
 .form_btn:is(:hover, :focus) {

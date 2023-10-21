@@ -1,6 +1,7 @@
 .addform {
   position: relative;
   width: fit-content;
+  margin: 0 auto;
 }
 .form_thumb {
   width: 440px;

@@ -7,13 +7,20 @@
   text-align: center;
 }
 .add_link {
-  /* text-decoration: none; */
+  text-decoration: none;
 }
 .add_btn {
   font-size: 16px;
   padding: 6px 12px;
+  display: block;
+  margin-left: auto;
   border-radius: 6px;
   background-color: #aee8ee;
+  box-shadow: -2px 16px 37px -12px #000000bf;
   cursor: pointer;
   transition: color 250ms linear, background-color 250ms linear;
+}
+.add_btn:is(:hover, :focus) {
+  color: #f0ffff;
+  background-color: #3b3bbe;
 }
