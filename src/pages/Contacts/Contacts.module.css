@@ -1,5 +1,6 @@
 .contacts_container {
   padding: 20px;
+  height: 100vh;
   background: linear-gradient(
     183deg,
     rgba(199, 207, 236, 0.06557005126269255) 27%,
