@@ -24,7 +24,7 @@
 }
 .cont_btn:is(:hover, :focus) {
   color: #f0ffff;
-  background-color: #3b3bbe;
+  background-color: #5151e6;
 }
 .cont_btns {
   display: flex;

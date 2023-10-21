@@ -34,7 +34,7 @@
 }
 .form_btn:is(:hover, :focus) {
   color: #f0ffff;
-  background-color: #3b3bbe;
+  background-color: #5151e6;
 }
 .close_btn {
   position: absolute;
@@ -47,5 +47,5 @@
 }
 .close_btn:is(:hover, :focus) {
   color: #f0ffff;
-  background-color: #3b3bbe;
+  background-color: #5151e6;
 }

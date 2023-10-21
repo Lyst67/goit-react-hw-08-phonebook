@@ -22,5 +22,8 @@
 }
 .add_btn:is(:hover, :focus) {
   color: #f0ffff;
-  background-color: #3b3bbe;
+  background-color: #5151e6;
+}
+.add_btn:is(:hover, :focus) .add_link {
+  color: #f0ffff;
 }
