@@ -1,5 +1,11 @@
 .contailer {
   padding-top: 20px;
+  height: 100vh;
+  background: linear-gradient(
+    183deg,
+    rgba(199, 207, 236, 0.06557005126269255) 27%,
+    rgba(87, 87, 147, 0.7238333565848214) 100%
+  );
 }
 .title {
   text-align: center;
