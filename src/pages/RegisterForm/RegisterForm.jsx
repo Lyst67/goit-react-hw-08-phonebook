@@ -17,7 +17,7 @@ const RegisterForm = () => {
     }
 
     return (
-        <>
+        <div className={css.contailer}>
             <h1 className={css.title}>Please register!</h1>
             <form className={css.form_thumb} onSubmit={handleSubmit} autoComplete="on">
                 <label className={css.form_label}>
@@ -36,7 +36,7 @@ const RegisterForm = () => {
                 </label>
                 <button type="submit" className={css.form_btn}>Register</button>
             </form>
-        </>
+        </div>
     )
 };
 export default RegisterForm;

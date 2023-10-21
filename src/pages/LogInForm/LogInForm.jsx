@@ -16,7 +16,7 @@ const LogInForm = () => {
     }
 
     return (
-        <>
+        <div className={css.contailer}>
             <h1 className={css.title}>Please enter your login!</h1>
         <form className={css.form_thumb} onSubmit={handleSubmit}>
             <label className={css.form_label}>
@@ -29,7 +29,7 @@ const LogInForm = () => {
             </label>
             <button type="submit" className={css.form_btn}>Log In</button>
         </form>     
-        </>
+        </div>
       
     )
 }
