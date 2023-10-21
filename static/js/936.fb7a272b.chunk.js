@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[936],{4936:function(e,r,o){o.r(r),o.d(r,{default:function(){return s}});var t=o(9434),c="Home_home_page__o955Q",n=o(9869),a=o(184),s=function(){var e=(0,t.v9)(n.zr);return(0,a.jsx)("div",{className:c,children:(0,a.jsxs)("h1",{children:["Hello ",e,"!",(0,a.jsx)("br",{}),"Welcome to the Phonebook service!"]})})}}}]);
+//# sourceMappingURL=936.fb7a272b.chunk.js.map
