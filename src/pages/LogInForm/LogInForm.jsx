@@ -2,16 +2,17 @@ import { logInThunk } from "redux/auth/auth-operations"
 import css from "../RegisterForm/RegisterForm.module.css"
 import { useDispatch } from "react-redux"
 
-export const LogInForm = () => {
+const LogInForm = () => {
     const dispatch = useDispatch()
 
      const handleSubmit = (evt) => {
          evt.preventDefault()
           const form = evt.currentTarget;
-        dispatch(logInThunk({
-            email: form.elements.email.value,
-            password: form.elements.password.value,
-        })) 
+         dispatch(logInThunk({
+             email: form.elements.email.value,
+             password: form.elements.password.value,
+         }));
+         form.reset();
     }
 
     return (
@@ -32,3 +33,4 @@ export const LogInForm = () => {
       
     )
 }
+export default LogInForm;

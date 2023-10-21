@@ -1,11 +1,9 @@
 import React, { useRef} from 'react';
 import css from './AddForm.module.css';
 import { addContact } from 'redux/contacts/operations';
-import { nanoid } from '@reduxjs/toolkit';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectContacts } from 'redux/contacts/selectors';
 import { useNavigate } from 'react-router-dom';
-
 
 export const AddForm = () => {
   const navigate = useNavigate()
@@ -17,16 +15,16 @@ export const AddForm = () => {
        event.preventDefault()
        const form = event.currentTarget
        const name = form.elements.name.value
-       const phone = form.elements.number.value
-       const id = nanoid()
-       const newContact = { id, name, phone }
+       const number = form.elements.number.value
+       const newContact = { name, number }
        const existName = contacts?.find(contact =>
          contact.name.toLowerCase() === name.toLowerCase().trim())
        if (existName) { alert(`${name} is already in contacts!`)
          return
        }
-       dispatch(addContact(newContact))
+       dispatch(addContact(newContact)) 
        form.reset()
+       
   }
   const handleBack = () => { navigate(goBackRef.current) }
 

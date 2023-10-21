@@ -1,8 +1,12 @@
+import { useSelector } from 'react-redux';
 import css from './Home.module.css'
-export const HomePage = () => {
+import { selectUserName } from 'redux/auth/auth-selectors';
+const HomePage = () => {
+    const userName = useSelector(selectUserName)
     return (
         <div className={css.home_page}>
-            <h1>Welcome to the Phonebook service!</h1>
+            <h1>Hello {userName}!<br/>Welcome to the Phonebook service!</h1>
         </div>
     )
 }
+export default HomePage;

@@ -1,5 +1,6 @@
 .cont_list {
-  width: 440px;
+  width: 600px;
+  margin: 0 auto;
   list-style: none;
   font-size: 20px;
   padding-left: 0;
@@ -24,4 +25,8 @@
 .cont_btn:is(:hover, :focus) {
   color: #f0ffff;
   background-color: #3b3bbe;
+}
+.cont_btns {
+  display: flex;
+  gap: 10px;
 }
