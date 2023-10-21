@@ -1,5 +1,10 @@
 .contacts_container {
   padding: 20px;
+  background: linear-gradient(
+    183deg,
+    rgba(199, 207, 236, 0.06557005126269255) 27%,
+    rgba(87, 87, 147, 0.7238333565848214) 100%
+  );
 }
 .contacts_title {
   margin-top: 20px;
