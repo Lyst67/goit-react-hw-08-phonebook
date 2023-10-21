@@ -38,11 +38,14 @@
 }
 .close_btn {
   position: absolute;
+  width: 28px;
+  height: 28px;
+  font-size: 18px;
   font-weight: 500;
   border-radius: 50%;
   background-color: #aee8ee;
-  top: 16px;
-  right: 16px;
+  top: 20px;
+  right: 20px;
   transition: color 250ms linear, background-color 250ms linear;
 }
 .close_btn:is(:hover, :focus) {
