@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkphonebook=self.webpackChunkphonebook||[]).push([[936],{4936:function(e,o,n){n.r(o),n.d(o,{default:function(){return l}});var s=n(9434),r="Home_home_page__o955Q",c="Home_title__L087v",t=n(9869),h=n(184),l=function(){var e=(0,s.v9)(t.zr);return(0,h.jsx)("div",{className:r,children:(0,h.jsxs)("h1",{className:c,children:["Hello ",e,"!",(0,h.jsx)("br",{}),"Welcome to the Phonebook service!"]})})}}}]);
+//# sourceMappingURL=936.112e71dd.chunk.js.map
